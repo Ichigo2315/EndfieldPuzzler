@@ -6,8 +6,7 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "canvas",
-      "onnxruntime-node"
+      "canvas"
     ]
   },
   "scripts": {
@@ -27,8 +26,7 @@
     "@mui/material": "^7.3.7",
     "onnxruntime-web": "^1.23.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tesseract.js": "^7.0.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -42,7 +40,6 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
     "jimp": "^1.6.0",
-    "onnxruntime-node": "^1.24.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.21.0",

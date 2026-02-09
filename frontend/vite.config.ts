@@ -19,7 +19,7 @@ function ortDevPlugin() {
             const ext = path.extname(file);
             const mime = ext === '.wasm' ? 'application/wasm'
               : ext === '.mjs' ? 'application/javascript'
-              : 'application/octet-stream';
+                : 'application/octet-stream';
             res.setHeader('Content-Type', mime);
             fs.createReadStream(file).pipe(res);
             return;
@@ -31,8 +31,25 @@ function ortDevPlugin() {
   };
 }
 
+// Plugin to ignore Node-only modules in the browser
+function ignoreNodeModulesPlugin() {
+  const modules = ['path', 'url', 'fs'];
+  return {
+    name: 'ignore-node-modules',
+    resolveId(id: string) {
+      if (modules.includes(id)) return id;
+      return null;
+    },
+    load(id: string) {
+      if (modules.includes(id)) return 'export default {};';
+      return null;
+    }
+  };
+}
+
 export default defineConfig({
   plugins: [
+    ignoreNodeModulesPlugin(),
     ortDevPlugin(),
     react(),
     viteStaticCopy({
@@ -46,6 +63,11 @@ export default defineConfig({
     headers: {
       'Cross-Origin-Opener-Policy': 'same-origin',
       'Cross-Origin-Embedder-Policy': 'require-corp',
+    },
+  },
+  build: {
+    rollupOptions: {
+      external: ['path', 'url', 'fs'],
     },
   },
 })
