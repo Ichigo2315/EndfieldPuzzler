@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+
+# Logs
+log/
+
+# Training data & ML artifacts
+dataset/
+runs/
+vision/
+*.pt
+
+# Python
+*.pyc
+__pycache__/
+
+# Large binary test data
+frontend/test_data/
+frontend/eng.traineddata
+
+# Temp files
+_tmp*
+**/tmp*
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

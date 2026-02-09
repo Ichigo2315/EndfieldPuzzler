@@ -1,0 +1,4153 @@
+[
+  {
+    "image_id": 1,
+    "metadata": {
+      "num_col": 3,
+      "num_row": 3,
+      "colors": [
+        "GN",
+        "BL"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "BL",
+          "shape": [
+            "XOO",
+            "XXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 2,
+    "metadata": {
+      "num_col": 3,
+      "num_row": 3,
+      "colors": [
+        "GN",
+        "BL"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "BL",
+          "shape": [
+            "XOO",
+            "XXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 3,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 4,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "GN",
+        "BL"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 4
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "BL",
+          "value": 1
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 3,
+          "color": "BL",
+          "value": 4
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "BL",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "BL",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "BL",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 5,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN",
+        "BL"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 0
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "BL",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "BL",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "BL",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "BL",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 6,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN",
+        "BL"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 0
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "BL",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 0,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "BL",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "BL",
+          "value": 1
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "BL",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "BL",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "BL",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 7,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "GN",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "GN",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "GN",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "GN",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 8,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "GN",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "GN",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "GN",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "GN",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "OOX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 9,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "BK",
+          "BK",
+          "EP",
+          "BK",
+          "BK"
+        ],
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "GN",
+          "EP",
+          "BK"
+        ],
+        [
+          "BK",
+          "BK",
+          "GN",
+          "BK",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "OXO",
+            "XXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OXO",
+            "XXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 10,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OXX",
+            "XXO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "OX",
+            "OX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OXX",
+            "XXO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 11,
+    "metadata": {
+      "num_col": 6,
+      "num_row": 6,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 5,
+          "color": "GN",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 5,
+          "color": "GN",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 12,
+    "metadata": {
+      "num_col": 6,
+      "num_row": 6,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 5,
+          "color": "GN",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 5,
+          "color": "GN",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 13,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "CY",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 14,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "CY",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 15,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "BK",
+          "CY",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "CY",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "BK",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 16,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "BK",
+          "CY",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "CY",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "BK",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 17,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "CY",
+        "OG"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 0,
+          "color": "OG",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "OG",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "OG",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 0
+        },
+        {
+          "index": 3,
+          "color": "OG",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 0,
+          "color": "OG",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "OG",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "OG",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "OG",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "OG",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "OG",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 18,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "CY",
+        "OG"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "BK",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "BK",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 0,
+          "color": "OG",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "OG",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 0
+        },
+        {
+          "index": 2,
+          "color": "OG",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 0
+        },
+        {
+          "index": 3,
+          "color": "OG",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 0,
+          "color": "OG",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "OG",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "OG",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 3,
+          "color": "OG",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "OG",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "OG",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 19,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "CY",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "CY",
+          "CY",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "CY"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "CY",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XOO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XOO",
+            "XXX",
+            "OXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 20,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "CY",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "CY",
+          "CY",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "CY"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "CY",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 3
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XOO",
+            "XXX",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XOO",
+            "XXX",
+            "OXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 21,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 22,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 23,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 24,
+    "metadata": {
+      "num_col": 4,
+      "num_row": 4,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 25,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ],
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ],
+        [
+          "BK",
+          "BK",
+          "BK",
+          "BK",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 0
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 0
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "OOX",
+            "XOX",
+            "XXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OOX",
+            "XOX",
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 26,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ],
+        [
+          "BK",
+          "EP",
+          "EP",
+          "EP",
+          "BK"
+        ],
+        [
+          "BK",
+          "BK",
+          "BK",
+          "BK",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 0
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 0
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "OOX",
+            "XOX",
+            "XXX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OOX",
+            "XOX",
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 27,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XO",
+            "XX",
+            "XO",
+            "XO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OXO",
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 28,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "GN"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "GN",
+          "value": 5
+        },
+        {
+          "index": 1,
+          "color": "GN",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "GN",
+          "value": 3
+        },
+        {
+          "index": 3,
+          "color": "GN",
+          "value": 2
+        },
+        {
+          "index": 4,
+          "color": "GN",
+          "value": 1
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "GN",
+          "shape": [
+            "XO",
+            "XX",
+            "XO",
+            "XO"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "XXO",
+            "XXX",
+            "OOX"
+          ]
+        },
+        {
+          "color": "GN",
+          "shape": [
+            "OXO",
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 29,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 5
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "OXO",
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 30,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 1
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 5
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 4
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 3
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XX",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXX",
+            "XOO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XXO",
+            "OXX"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "OXO",
+            "XXX"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 31,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "BK",
+          "EP",
+          "BK",
+          "EP",
+          "BK"
+        ],
+        [
+          "CY",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "BK",
+          "EP",
+          "BK"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "CY"
+        ],
+        [
+          "BK",
+          "EP",
+          "BK",
+          "EP",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 0
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XO",
+            "XX",
+            "XO",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XO",
+            "XX",
+            "XO",
+            "XO"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "image_id": 32,
+    "metadata": {
+      "num_col": 5,
+      "num_row": 5,
+      "colors": [
+        "CY"
+      ],
+      "map": [
+        [
+          "BK",
+          "EP",
+          "BK",
+          "EP",
+          "BK"
+        ],
+        [
+          "CY",
+          "EP",
+          "EP",
+          "EP",
+          "EP"
+        ],
+        [
+          "BK",
+          "EP",
+          "BK",
+          "EP",
+          "BK"
+        ],
+        [
+          "EP",
+          "EP",
+          "EP",
+          "EP",
+          "CY"
+        ],
+        [
+          "BK",
+          "EP",
+          "BK",
+          "EP",
+          "BK"
+        ]
+      ],
+      "row_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 0
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 5
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 0
+        }
+      ],
+      "col_constraints": [
+        {
+          "index": 0,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 1,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 2,
+          "color": "CY",
+          "value": 2
+        },
+        {
+          "index": 3,
+          "color": "CY",
+          "value": 3
+        },
+        {
+          "index": 4,
+          "color": "CY",
+          "value": 2
+        }
+      ],
+      "puzzles": [
+        {
+          "color": "CY",
+          "shape": [
+            "XO",
+            "XX",
+            "XO",
+            "XO"
+          ]
+        },
+        {
+          "color": "CY",
+          "shape": [
+            "XO",
+            "XX",
+            "XO",
+            "XO"
+          ]
+        }
+      ]
+    }
+  }
+]
