@@ -1,8 +1,9 @@
 import { Box } from '@mui/material';
 import LockIcon from '@mui/icons-material/Lock';
 import type { PuzzleMetadata, ColorCode, CellCode, ConstraintItem } from '../types/puzzle';
+import { COLOR_CSS } from '../core/config';
 
-const COLOR_CSS: Record<ColorCode, string> = { GN: '#A5D610', BL: '#4DCCFF', CY: '#00BCD4', OG: '#FF9800' };
+
 
 interface Props { metadata: PuzzleMetadata; }
 

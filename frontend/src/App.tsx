@@ -1,9 +1,10 @@
 import { useState, useCallback } from 'react';
 import {
-  AppBar, Toolbar, Typography, Container, Paper, Button, Box, Fab, Switch,
+  AppBar, Toolbar, Typography, Container, Paper, Button, Box, Fab,
   CircularProgress, IconButton, Tooltip, TextField, ToggleButtonGroup, ToggleButton,
 } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import TranslateIcon from '@mui/icons-material/Translate';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -12,18 +13,19 @@ import BlockIcon from '@mui/icons-material/Block';
 import LockIcon from '@mui/icons-material/Lock';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import DeleteSweepIcon from '@mui/icons-material/DeleteSweep';
 import { ImageUploader, PuzzleEditor, SolutionDisplay, PieceList } from './components';
 import { MonitorModal } from './components/MonitorModal';
 import { processImage, imageDataFromFile, metadataToPuzzleData } from './core/imageProcessor';
 import { solvePuzzle } from './core/solver';
-import { debugLogger, profiler } from './core/monitor';
+import { COLOR_CSS, ALL_COLORS } from './core/config';
+import { debugLogger, profiler } from './monitor';
 import { useI18n, useT } from './i18n';
 import { useThemeMode } from './theme';
 import type { Tool } from './components/PuzzleEditor';
 import type { CellCode, ColorCode, ConstraintItem, PuzzleItem, PuzzleMetadata, PuzzleData, Solution } from './types/puzzle';
 
-const COLOR_CSS: Record<ColorCode, string> = { GN: '#A5D610', BL: '#4DCCFF', CY: '#00BCD4', OG: '#FF9800' };
-const ALL_COLORS: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+
 
 const mkGrid = (r: number, c: number): CellCode[][] =>
   Array.from({ length: r }, () => Array<CellCode>(c).fill('EP'));
@@ -113,6 +115,14 @@ function App() {
     doSolve(md);
   }, [grid, rowC, colC, pieces, rows, cols, doSolve]);
 
+  const handleClearAll = useCallback(() => {
+    setGrid(mkGrid(rows, cols));
+    setRowC([]);
+    setColC([]);
+    setPieces([]);
+    setSolveState({ status: 'idle' });
+  }, [rows, cols]);
+
   // ── Image upload ──
   const handleImageSelect = useCallback(async (file: File) => {
     debugLogger.clear(); profiler.reset();
@@ -137,34 +147,40 @@ function App() {
   }, [t, doSolve]);
 
   return (
-    <Box sx={{ minHeight: '100vh' }}>
+    <Box className="app-root">
       {/* ── Header ── */}
       <AppBar position="static" elevation={0} sx={{ bgcolor: 'background.paper', borderBottom: 1, borderColor: 'divider' }}>
-        <Toolbar>
-          <Box sx={{ width: 36, height: 36, borderRadius: 1, bgcolor: 'primary.main', display: 'flex', alignItems: 'center', justifyContent: 'center', mr: 1.5 }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
-              <path d="M4 4h8v8H4V4zm2 2v4h4V6H6zm8-2h8v8h-8V4zm2 2v4h4V6h-4zM4 14h8v8H4v-8zm2 2v4h4v-4H6z" />
+        <Toolbar sx={{ px: { xs: 2, sm: 3 } }}>
+          <Box className="app-logo">
+            <svg width="28" height="28" viewBox="0 0 100 100">
+              <path d="M25 25 L75 25 L75 45 L45 45 L45 75 L25 75 Z" fill="#A5D610" />
+              <path d="M55 55 L75 55 L75 75 L55 75 Z" fill="#4DCCFF" />
             </svg>
           </Box>
           <Box sx={{ flex: 1 }}>
-            <Typography variant="subtitle1" fontWeight={700} color="text.primary" lineHeight={1.2}>{t('app.title')}</Typography>
-            <Typography variant="caption" color="text.secondary">{t('app.subtitle')}</Typography>
+            <Typography variant="h6" fontWeight={700} color="text.primary" lineHeight={1.2}>{t('app.title')}</Typography>
+            <Typography variant="body2" color="text.secondary">{t('app.subtitle')}</Typography>
           </Box>
           <Tooltip title={locale === 'zh' ? 'English' : '中文'}>
             <IconButton size="small" onClick={() => setLocale(locale === 'zh' ? 'en' : 'zh')}>
               <TranslateIcon fontSize="small" />
             </IconButton>
           </Tooltip>
-          <Switch
-            checked={isDark} onChange={toggleTheme} size="small" sx={{ ml: 0.5 }}
-            icon={<Box sx={{ width: 20, height: 20, borderRadius: '50%', bgcolor: '#ffd93d', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><LightModeIcon sx={{ fontSize: 12, color: '#f57f17' }} /></Box>}
-            checkedIcon={<Box sx={{ width: 20, height: 20, borderRadius: '50%', bgcolor: '#283593', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><DarkModeIcon sx={{ fontSize: 12, color: '#c5cae9' }} /></Box>}
-          />
+          <Tooltip title={isDark ? t('theme.light') : t('theme.dark')}>
+            <IconButton size="small" onClick={toggleTheme} sx={{ ml: 0.5 }}>
+              {isDark ? <LightModeIcon fontSize="small" /> : <DarkModeIcon fontSize="small" />}
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="GitHub">
+            <IconButton size="small" component="a" href="https://github.com/Ichigo2315/EndfieldPuzzler" target="_blank" rel="noopener noreferrer" sx={{ ml: 0.5 }}>
+              <GitHubIcon fontSize="small" />
+            </IconButton>
+          </Tooltip>
         </Toolbar>
       </AppBar>
 
       {/* ── Content ── */}
-      <Container maxWidth="lg" sx={{ py: 3, display: 'flex', flexDirection: 'column', gap: 3 }}>
+      <Container maxWidth="lg" className="app-content">
         <ImageUploader onImageSelect={handleImageSelect} disabled={isProcessing} />
 
         {isProcessing && (
@@ -175,27 +191,39 @@ function App() {
         )}
 
         {/* ── Toolbar ── */}
-        <Paper variant="outlined" sx={{ p: 1.5, display: 'flex', alignItems: 'center', gap: 1.5, flexWrap: 'wrap' }}>
-          <ToggleButtonGroup size="small" value={tool} exclusive onChange={(_, v) => v && setTool(v)}>
-            <ToggleButton value="select"><Tooltip title={t('editor.tool.select')}><NearMeIcon fontSize="small" /></Tooltip></ToggleButton>
-            <ToggleButton value="restore"><Tooltip title={t('editor.tool.restore')}><AutoFixHighIcon fontSize="small" /></Tooltip></ToggleButton>
-            <ToggleButton value="blocked"><Tooltip title={t('editor.tool.blocked')}><BlockIcon fontSize="small" /></Tooltip></ToggleButton>
-            <ToggleButton value="occupied"><Tooltip title={t('editor.tool.occupied')}><LockIcon fontSize="small" /></Tooltip></ToggleButton>
-          </ToggleButtonGroup>
+        <Paper variant="outlined" className="app-toolbar" sx={{ border: '1px solid', borderColor: 'divider' }}>
+          <Box className="app-tool-group" sx={{ border: '1px solid', borderColor: 'divider', bgcolor: 'background.paper' }}>
+            <ToggleButtonGroup size="small" value={tool} exclusive onChange={(_, v) => v && setTool(v)} sx={{ border: 'none', '& .MuiToggleButton-root': { border: 'none', borderRadius: 0 } }}>
+              <ToggleButton value="select"><Tooltip title={t('editor.tool.select')}><NearMeIcon fontSize="small" /></Tooltip></ToggleButton>
+              <ToggleButton value="restore"><Tooltip title={t('editor.tool.restore')}><AutoFixHighIcon fontSize="small" /></Tooltip></ToggleButton>
+              <ToggleButton value="blocked"><Tooltip title={t('editor.tool.blocked')}><BlockIcon fontSize="small" /></Tooltip></ToggleButton>
+              <ToggleButton value="occupied"><Tooltip title={t('editor.tool.occupied')}><LockIcon fontSize="small" /></Tooltip></ToggleButton>
+            </ToggleButtonGroup>
+
+            <Box className="toolbar-inline-divider" sx={{ bgcolor: 'divider' }} />
+
+            <Tooltip title={t('action.clear')}>
+              <IconButton onClick={handleClearAll} size="small" sx={{
+                color: 'error.main', borderRadius: 0, p: '7px',
+                '&:hover': { bgcolor: 'error.lighter' }
+              }}>
+                <DeleteSweepIcon sx={{ fontSize: 20 }} />
+              </IconButton>
+            </Tooltip>
+          </Box>
 
           {tool === 'occupied' && (
-            <Box display="flex" gap={0.5}>
+            <Box display="flex" gap={1}>
               {ALL_COLORS.map(cc => (
-                <Box key={cc} onClick={() => setOccColor(cc)} sx={{
-                  width: 24, height: 24, borderRadius: '50%', cursor: 'pointer', bgcolor: COLOR_CSS[cc],
-                  outline: cc === occColor ? '2.5px solid' : '2px solid transparent',
-                  outlineColor: cc === occColor ? 'text.primary' : 'transparent', outlineOffset: 1,
-                }} />
+                <Box key={cc} onClick={() => setOccColor(cc)}
+                  className={`color-swatch-occ${cc === occColor ? ' active' : ''}`}
+                  sx={{ bgcolor: COLOR_CSS[cc] }}
+                />
               ))}
             </Box>
           )}
 
-          <Box sx={{ width: '1px', height: 28, bgcolor: 'divider', mx: 0.5 }} />
+          <Box className="toolbar-section-divider" sx={{ bgcolor: 'divider' }} />
 
           <TextField
             label={t('editor.rows')} type="number" size="small" variant="outlined"
@@ -216,15 +244,15 @@ function App() {
             startIcon={<PlayArrowIcon />}
             onClick={handleSolve}
             disabled={isProcessing}
-            sx={{ fontWeight: 700, px: 3, borderRadius: 2, textTransform: 'none', fontSize: 16 }}
+            sx={{ fontWeight: 700, px: 3, borderRadius: '8px', textTransform: 'none', fontSize: 16 }}
           >
             {t('action.solve')}
           </Button>
         </Paper>
 
         {/* ── Editor + Pieces (CSS Grid) ── */}
-        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1fr 260px' }, gap: 3, alignItems: 'start' }}>
-          <Paper variant="outlined" sx={{ p: 2, display: 'flex', justifyContent: 'center' }}>
+        <Box className="editor-layout">
+          <Paper variant="outlined" className="editor-panel" sx={{ bgcolor: 'background.default', border: '1px solid', borderColor: 'divider' }}>
             <PuzzleEditor
               grid={grid} rowC={rowC} colC={colC}
               tool={tool} occColor={occColor}
@@ -232,7 +260,7 @@ function App() {
               onConstraintChange={handleConstraintChange}
             />
           </Paper>
-          <Paper variant="outlined" sx={{ p: 2 }}>
+          <Paper variant="outlined" className="pieces-panel" sx={{ border: '1px solid', borderColor: 'divider' }}>
             <PieceList
               pieces={pieces}
               onAdd={item => setPieces(prev => [...prev, item])}
@@ -243,12 +271,12 @@ function App() {
 
         {/* ── Solution / Error ── */}
         {solveState.status === 'solved' && (
-          <Paper variant="outlined" sx={{ p: 2, border: '2px solid', borderColor: 'primary.main' }}>
+          <Paper variant="outlined" className="solution-panel" sx={{ bgcolor: 'background.default', border: '1px solid', borderColor: 'divider' }}>
             <SolutionDisplay puzzleData={solveState.puzzleData} metadata={solveState.metadata} solution={solveState.solution} />
           </Paper>
         )}
         {solveState.status === 'error' && (
-          <Paper variant="outlined" sx={{ p: 4, textAlign: 'center' }}>
+          <Paper variant="outlined" className="error-panel">
             <Typography variant="h5" color="text.disabled" mb={1}>🚫</Typography>
             <Typography fontWeight={600} color="text.secondary">{solveState.message}</Typography>
             <Typography variant="caption" color="text.disabled">{t('result.noSolutionHint')}</Typography>
@@ -256,9 +284,41 @@ function App() {
         )}
       </Container>
 
+      {/* ── Footer ── */}
+      <Box className="app-footer">
+        <Typography variant="caption" color="text.secondary" sx={{ display: 'flex', alignItems: 'center', gap: 0.5, justifyContent: 'center', flexWrap: 'wrap' }}>
+          Built with
+          <a href="https://vite.dev" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 3, color: 'inherit', textDecoration: 'none' }}>
+            <svg width="14" height="14" viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M399.641 59.525L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.552 59.525C6.379 52.178 12.114 43.207 20.539 44.474L204.958 73.819C206.139 73.996 207.338 73.993 208.519 73.811L390.034 44.535C398.424 43.238 404.169 52.068 399.641 59.525Z" fill="url(#vite-grad-a)" />
+              <path d="M292.965 1.474L156.801 28.264C154.563 28.706 152.906 30.603 152.82 32.884L146.11 199.063C145.991 202.16 148.701 204.614 151.772 204.174L189.151 198.844C192.584 198.355 195.499 201.39 194.867 204.8L186.849 247.858C186.185 251.442 189.371 254.536 192.91 253.792L216.037 248.406C219.581 247.661 222.77 250.763 222.098 254.35L210.282 318.369C209.328 323.517 216.236 326.369 219.061 321.937L220.906 318.973L311.756 139.535C313.479 136.142 310.121 132.337 306.511 133.565L268.167 146.767C264.733 147.949 261.605 144.59 262.874 141.213L292.965 1.474Z" fill="url(#vite-grad-b)" />
+              <defs>
+                <linearGradient id="vite-grad-a" x1="6.079" y1="32.836" x2="235.189" y2="344.645" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#41D1FF" /><stop offset="1" stopColor="#BD34FE" />
+                </linearGradient>
+                <linearGradient id="vite-grad-b" x1="194.651" y1="8.818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#FFBD4F" /><stop offset="1" stopColor="#FF9800" />
+                </linearGradient>
+              </defs>
+            </svg>
+            Vite
+          </a>
+          |&nbsp;Powered by
+          <a href="https://onnxruntime.ai" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 3, color: 'inherit', textDecoration: 'none' }}>
+            <img src="/onnx-icon.svg" alt="ONNX Runtime" width="14" height="14" />
+            ONNX Runtime Web
+          </a>
+        </Typography>
+      </Box>
+
       {/* ── FAB ── */}
       <Fab size="small" onClick={() => setMonitorOpen(true)}
-        sx={{ position: 'fixed', bottom: 16, right: 16, bgcolor: 'background.paper', '&:hover': { bgcolor: 'action.hover' } }}>
+        sx={{
+          position: 'fixed', bottom: 16, right: 16,
+          bgcolor: isDark ? 'grey.800' : 'background.paper',
+          color: isDark ? '#fff' : 'inherit',
+          '&:hover': { bgcolor: isDark ? 'grey.700' : 'action.hover' }
+        }}>
         <CodeIcon fontSize="small" />
       </Fab>
       <MonitorModal open={monitorOpen} onClose={() => setMonitorOpen(false)} previewUrl={previewUrl} />

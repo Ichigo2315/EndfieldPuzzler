@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Box, TextField, Alert } from '@mui/material';
 import type { ColorCode, ConstraintItem } from '../types/puzzle';
+import { COLOR_CSS, ALL_COLORS } from '../core/config';
 import { useT } from '../i18n';
 
-const COLOR_CSS: Record<ColorCode, string> = { GN: '#A5D610', BL: '#4DCCFF', CY: '#00BCD4', OG: '#FF9800' };
-const ALL: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+
 
 interface Props {
   open: boolean;
@@ -27,19 +27,19 @@ export function ConstraintModal({ open, onClose, type, index, maxValue, current,
     setVals(v);
   }, [current, index, open]);
 
-  const sum = ALL.reduce((s, cc) => s + vals[cc], 0);
-  const nonZero = ALL.filter(cc => vals[cc] > 0).length;
-  const anyOver = ALL.some(cc => vals[cc] > maxValue);
+  const sum = ALL_COLORS.reduce((s, cc) => s + vals[cc], 0);
+  const nonZero = ALL_COLORS.filter(cc => vals[cc] > 0).length;
+  const anyOver = ALL_COLORS.some(cc => vals[cc] > maxValue);
   const sumOver = sum > maxValue;
   const tooMany = nonZero > 2;
   const hasErr = anyOver || sumOver || tooMany;
   const errMsg = anyOver ? t('editor.constraint.error.max', { max: maxValue })
     : sumOver ? t('editor.constraint.error.sum', { max: maxValue })
-    : tooMany ? t('editor.constraint.error.colors') : null;
+      : tooMany ? t('editor.constraint.error.colors') : null;
 
   const save = () => {
     if (hasErr) return;
-    onSave(ALL.filter(cc => vals[cc] > 0).map(cc => ({ index, color: cc, value: vals[cc] })));
+    onSave(ALL_COLORS.filter(cc => vals[cc] > 0).map(cc => ({ index, color: cc, value: vals[cc] })));
   };
 
   const typeLabel = t(type === 'row' ? 'editor.constraint.row' : 'editor.constraint.col');
@@ -48,7 +48,7 @@ export function ConstraintModal({ open, onClose, type, index, maxValue, current,
     <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
       <DialogTitle>{t('editor.constraint.title', { type: typeLabel, n: index + 1 })}</DialogTitle>
       <DialogContent sx={{ pt: '16px !important' }}>
-        {ALL.map(cc => (
+        {ALL_COLORS.map(cc => (
           <Box key={cc} display="flex" alignItems="center" gap={2} mb={1.5}>
             <Box sx={{ width: 24, height: 24, borderRadius: '6px', bgcolor: COLOR_CSS[cc], flexShrink: 0 }} />
             <TextField

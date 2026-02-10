@@ -1,23 +1,23 @@
-// Color codes matching Python implementation
+// Color codes
 export type ColorCode = 'GN' | 'BL' | 'CY' | 'OG';
 
 // Cell codes: EP=empty, BK=blocked, or color code for occupied
 export type CellCode = 'EP' | 'BK' | ColorCode;
 
-// Constraint item (matches Python ConstraintItem)
+// Constraint item
 export interface ConstraintItem {
   index: number;
   color: ColorCode;
   value: number;
 }
 
-// Puzzle piece (matches Python PuzzleItem)
+// Puzzle piece
 export interface PuzzleItem {
   color: ColorCode;
   shape: string[];  // ["XX", "XO"] format
 }
 
-// Complete puzzle metadata (matches Python PuzzleMetadata)
+// Complete puzzle metadata
 export interface PuzzleMetadata {
   num_col: number;
   num_row: number;
@@ -88,7 +88,6 @@ export interface Solution {
 // Processing status
 export type ProcessingStatus =
   | 'idle'
-  | 'loading-opencv'
   | 'processing'
   | 'parsed'
   | 'solving'
@@ -97,7 +96,6 @@ export type ProcessingStatus =
 
 export type AppState =
   | { status: 'idle' }
-  | { status: 'loading-opencv' }
   | { status: 'processing' }
   | { status: 'solving'; puzzleData: PuzzleData }
   | { status: 'solved'; puzzleData: PuzzleData; solution: Solution }

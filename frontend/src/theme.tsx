@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useMemo, type ReactNode } from 'react';
+import { createContext, useContext, useState, useMemo, useCallback, type ReactNode } from 'react';
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 
 interface Ctx { isDark: boolean; toggle: () => void; }
@@ -11,8 +11,21 @@ export function AppThemeProvider({ children }: { children: ReactNode }) {
     shape: { borderRadius: 12 },
     typography: { fontFamily: 'Inter, system-ui, sans-serif' },
   }), [isDark]);
+  const toggle = useCallback(() => {
+    const next = !isDark;
+    if (!document.startViewTransition) {
+      setIsDark(next);
+      document.documentElement.classList.toggle('dark', next);
+      return;
+    }
+    document.startViewTransition(() => {
+      setIsDark(next);
+      document.documentElement.classList.toggle('dark', next);
+    });
+  }, [isDark]);
+
   return (
-    <ThemeCtx.Provider value={{ isDark, toggle: () => setIsDark(d => !d) }}>
+    <ThemeCtx.Provider value={{ isDark, toggle }}>
       <ThemeProvider theme={theme}><CssBaseline />{children}</ThemeProvider>
     </ThemeCtx.Provider>
   );

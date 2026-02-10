@@ -4,8 +4,8 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import DownloadIcon from '@mui/icons-material/Download';
-import { debugLogger, type DebugLogEntry } from '../core/monitor/debugLogger';
-import { profiler, STAGE_COLORS, type StageRecord } from '../core/monitor/profiler';
+import { debugLogger, type DebugLogEntry } from '../monitor/debugLogger';
+import { profiler, STAGE_COLORS, type StageRecord } from '../monitor/profiler';
 import { useT } from '../i18n';
 
 function useLogs() {

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Box, Typography } from '@mui/material';
 import type { ColorCode, PuzzleItem } from '../types/puzzle';
+import { COLOR_CSS, ALL_COLORS } from '../core/config';
 import { useT } from '../i18n';
 
-const COLOR_CSS: Record<ColorCode, string> = { GN: '#A5D610', BL: '#4DCCFF', CY: '#00BCD4', OG: '#FF9800' };
-const ALL: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+
 const S = 40;
 
 interface Props { open: boolean; onClose: () => void; onSave: (item: PuzzleItem) => void; }
@@ -40,30 +40,41 @@ export function PieceEditorModal({ open, onClose, onSave }: Props) {
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
-      <DialogTitle>{t('editor.piece.add')}</DialogTitle>
-      <DialogContent sx={{ pt: '16px !important' }}>
-        <Box display="flex" gap={0.5} mb={2}>
-          {ALL.map(cc => (
+      <DialogTitle sx={{ pb: 0, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        {t('editor.piece.add')}
+        <Box sx={{
+          display: 'flex', gap: 0.8, p: '4px', bgcolor: 'action.hover',
+          borderRadius: '10px', border: '1px solid', borderColor: 'divider'
+        }}>
+          {ALL_COLORS.map(cc => (
             <Box key={cc} onClick={() => setColor(cc)} sx={{
-              width: 28, height: 28, borderRadius: '50%', cursor: 'pointer', bgcolor: COLOR_CSS[cc],
-              outline: cc === color ? '2.5px solid' : '2px solid transparent',
-              outlineColor: cc === color ? 'text.primary' : 'transparent', outlineOffset: 1,
+              width: 32, height: 32, borderRadius: '6px', cursor: 'pointer', bgcolor: COLOR_CSS[cc],
+              outline: cc === color ? '2px solid' : '2px solid transparent',
+              outlineColor: cc === color ? 'divider' : 'transparent', outlineOffset: 1.5,
+              transition: 'transform 0.1s, outline-color 0.1s',
+              '&:hover': { transform: 'scale(1.1)' }
             }} />
           ))}
         </Box>
-        <Typography variant="caption" color="text.secondary" mb={1} display="block">{t('editor.piece.draw')}</Typography>
-        <Box display="inline-block" onMouseUp={up} onMouseLeave={up} sx={{ userSelect: 'none' }}>
-          {cv.map((row, r) => (
-            <Box key={r} display="flex">
-              {row.map((filled, c) => (
-                <Box key={c} onMouseDown={() => down(r, c)} onMouseEnter={() => enter(r, c)} sx={{
-                  width: S, height: S, border: '1.5px solid', borderColor: 'divider',
-                  bgcolor: filled ? COLOR_CSS[color] : 'background.default',
-                  cursor: 'crosshair', '&:hover': { opacity: 0.7 }, transition: 'background-color .08s',
-                }} />
-              ))}
-            </Box>
-          ))}
+      </DialogTitle>
+      <DialogContent sx={{ pt: '0px !important' }}>
+        <Typography variant="caption" color="text.secondary" mb={2} mt={1} display="block">
+          {t('editor.piece.draw')}
+        </Typography>
+        <Box display="flex" justifyContent="center">
+          <Box onMouseUp={up} onMouseLeave={up} sx={{ userSelect: 'none', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            {cv.map((row, r) => (
+              <Box key={r} display="flex" gap="4px">
+                {row.map((filled, c) => (
+                  <Box key={c} onMouseDown={() => down(r, c)} onMouseEnter={() => enter(r, c)} sx={{
+                    width: S, height: S, border: '2px solid', borderColor: 'divider', borderRadius: '8px',
+                    bgcolor: filled ? COLOR_CSS[color] : 'background.default',
+                    cursor: 'crosshair', '&:hover': { opacity: 0.7 }, transition: 'background-color .08s',
+                  }} />
+                ))}
+              </Box>
+            ))}
+          </Box>
         </Box>
       </DialogContent>
       <DialogActions>

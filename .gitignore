@@ -29,6 +29,7 @@ frontend/eng.traineddata
 _tmp*
 **/tmp*
 *.zip
+tsconfig.tsbuildinfo
 
 # OS
 .DS_Store
