@@ -10,6 +10,12 @@ export const COLOR_RANGES: Record<ColorCode | 'BK', [[number, number, number], [
   BK: [[0, 0, 40], [180, 50, 120]],
 };
 
+// Display colors (CSS hex)
+export const COLOR_CSS: Record<ColorCode, string> = { GN: '#A5D610', BL: '#4DCCFF', CY: '#00BCD4', OG: '#FF9800' };
+
+// All color codes
+export const ALL_COLORS: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+
 // YOLO class labels
 export const ROI_LABELS = ['grid_bbox', 'row_constraint_strip', 'col_constraint_strip', 'piece_panel_bbox'] as const;
 export const CELL_LABELS = ['cell_empty', 'cell_obstacle', 'cell_occupied'] as const;

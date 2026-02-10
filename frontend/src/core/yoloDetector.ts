@@ -5,11 +5,9 @@ import * as ort from 'onnxruntime-web';
 import type { Box, ROIResult, CellDetection } from '../types/puzzle';
 import { ROI_LABELS, CELL_LABELS, YOLO_MODEL_PATH } from './config';
 
-// WASM backend config – in dev mode serve from public/, in prod Vite bundles automatically
+// WASM backend config
 ort.env.wasm.numThreads = 1;
-if (import.meta.env.DEV) {
-  ort.env.wasm.wasmPaths = '/';
-}
+ort.env.wasm.wasmPaths = import.meta.env.BASE_URL || '/';
 
 const INPUT_SIZE = 640;
 

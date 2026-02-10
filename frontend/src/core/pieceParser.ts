@@ -2,9 +2,9 @@
  * Piece parser using CV-based shape and color detection.
  */
 import type { ColorCode, PieceInfo } from '../types/puzzle';
-import { COLOR_RANGES } from './config';
+import { COLOR_RANGES, ALL_COLORS } from './config';
 
-const COLOR_CODES: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+const COLOR_CODES = ALL_COLORS;
 
 export class PieceParser {
   parse(imageData: ImageData): PieceInfo[] {
@@ -186,8 +186,8 @@ export class PieceParser {
         for (const code of COLOR_CODES) {
           const [[hMin, sMin, vMin], [hMax, sMax, vMax]] = COLOR_RANGES[code];
           if (hsv.h >= hMin && hsv.h <= hMax &&
-              hsv.s >= sMin && hsv.s <= sMax &&
-              hsv.v >= vMin && hsv.v <= vMax) {
+            hsv.s >= sMin && hsv.s <= sMax &&
+            hsv.v >= vMin && hsv.v <= vMax) {
             mask[y * width + x] = 255;
             break;
           }
@@ -217,8 +217,8 @@ export class PieceParser {
         for (const code of COLOR_CODES) {
           const [[hMin, sMin, vMin], [hMax, sMax, vMax]] = COLOR_RANGES[code];
           if (hsv.h >= hMin && hsv.h <= hMax &&
-              hsv.s >= sMin && hsv.s <= sMax &&
-              hsv.v >= vMin && hsv.v <= vMax) {
+            hsv.s >= sMin && hsv.s <= sMax &&
+            hsv.v >= vMin && hsv.v <= vMax) {
             counts[code]++;
           }
         }
@@ -337,7 +337,7 @@ export class PieceParser {
 
     const fillRatio = coords.length / totalCells;
     const fillBonus = fillRatio >= 0.3 && fillRatio <= 0.7 ? 0.3 :
-                      fillRatio >= 0.2 && fillRatio <= 0.8 ? 0.15 : 0;
+      fillRatio >= 0.2 && fillRatio <= 0.8 ? 0.15 : 0;
 
     let sizeBonus = 0;
     if (hasGaps) {

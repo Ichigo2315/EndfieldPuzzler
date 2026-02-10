@@ -15,8 +15,9 @@ import { YOLODetector, getYOLODetector } from './yoloDetector';
 import { mapParser } from './mapParser';
 import { ConstraintParser } from './constraintParser';
 import { pieceParser } from './pieceParser';
-import { profiler } from './monitor';
-import { debugLogger } from './monitor';
+import { profiler } from '../monitor';
+import { debugLogger } from '../monitor';
+import { getDigitDetector } from './digitNN';
 
 export class ImageProcessor {
   private detector: YOLODetector | null = null;
@@ -24,10 +25,17 @@ export class ImageProcessor {
 
   async init(): Promise<void> {
     profiler.start('model-load');
-    debugLogger.info('model-load', 'Loading YOLO ONNX model…');
-    this.detector = await getYOLODetector();
+    debugLogger.info('model-load', 'Loading YOLO and Digit ONNX models…');
+
+    // Load YOLO and Digit models in parallel
+    const [detector] = await Promise.all([
+      getYOLODetector(),
+      getDigitDetector()
+    ]);
+    this.detector = detector;
+
     profiler.end('model-load');
-    debugLogger.info('model-load', 'Model loaded');
+    debugLogger.info('model-load', 'Models loaded');
   }
 
   async process(imageData: ImageData): Promise<PuzzleMetadata> {

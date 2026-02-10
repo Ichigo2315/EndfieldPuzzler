@@ -2,9 +2,9 @@
  * Constraint strip parser - TypeScript port of Python implementation.
  */
 import type { ColorCode, ConstraintInfo, ConstraintStripResult, ConstraintValue, DisplayMode } from '../types/puzzle';
-import { COLOR_RANGES, COLOR_ORDER } from './config';
+import { COLOR_RANGES, COLOR_ORDER, ALL_COLORS } from './config';
 import { recognizeDigit } from './digitRecognizer';
-import { debugLogger } from './monitor';
+import { debugLogger } from '../monitor';
 
 // ============================================================================
 // Types
@@ -64,8 +64,8 @@ function createColorMask(img: ImageMatrix, code: ColorCode, relaxed = false): Ui
       const hsv = rgbToHsv(r, g, b);
 
       if (hsv.h >= hMin && hsv.h <= hMax &&
-          hsv.s >= sMinAdj && hsv.s <= sMax &&
-          hsv.v >= vMinAdj && hsv.v <= vMax) {
+        hsv.s >= sMinAdj && hsv.s <= sMax &&
+        hsv.v >= vMinAdj && hsv.v <= vMax) {
         mask[y * img.width + x] = 255;
       }
     }
@@ -137,7 +137,7 @@ function countBorderPixels(mask: Uint8Array, w: number, h: number, cnt: Contour)
       if (mask[y * w + x] === 0) continue;
       // Check if any 4-neighbor is background or border
       let isBorder = false;
-      for (const [nx, ny] of [[x-1,y],[x+1,y],[x,y-1],[x,y+1]] as [number,number][]) {
+      for (const [nx, ny] of [[x - 1, y], [x + 1, y], [x, y - 1], [x, y + 1]] as [number, number][]) {
         if (nx < 0 || nx >= w || ny < 0 || ny >= h || mask[ny * w + nx] === 0) {
           isBorder = true; break;
         }
@@ -227,7 +227,7 @@ function rotateImage(img: ImageMatrix): ImageMatrix {
 
 export class ConstraintParser {
   private wasRotated = false;
-  private static readonly COLOR_CODES: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+  private static readonly COLOR_CODES = ALL_COLORS;
 
   async parse(imageData: Uint8ClampedArray, width: number, height: number): Promise<ConstraintStripResult> {
     let img: ImageMatrix = { data: imageData, width, height, channels: 4 };
@@ -399,14 +399,14 @@ export class ConstraintParser {
 
     // Step 1: build grayscale (V channel) and saturation arrays
     const gray = new Float32Array(width * height);
-    const sat  = new Float32Array(width * height);
+    const sat = new Float32Array(width * height);
     for (let y = 0; y < height; y++) {
       for (let x = 0; x < width; x++) {
         const [r, g, b] = getPixel(img, x, y);
         const hsv = rgbToHsv(r, g, b);
         const idx = y * width + x;
         gray[idx] = hsv.v;
-        sat[idx]  = hsv.s;
+        sat[idx] = hsv.s;
       }
     }
 
@@ -424,9 +424,9 @@ export class ConstraintParser {
     const localMean = (x1: number, y1: number, x2: number, y2: number): number => {
       const iw = width + 1;
       const sum = integral[(y2 + 1) * iw + (x2 + 1)]
-                - integral[y1 * iw + (x2 + 1)]
-                - integral[(y2 + 1) * iw + x1]
-                + integral[y1 * iw + x1];
+        - integral[y1 * iw + (x2 + 1)]
+        - integral[(y2 + 1) * iw + x1]
+        + integral[y1 * iw + x1];
       return sum / ((x2 - x1 + 1) * (y2 - y1 + 1));
     };
 
@@ -464,11 +464,11 @@ export class ConstraintParser {
 
     debugLogger.info('constraint-row',
       `detectZeroSymbols(adaptive): img=${width}×${height}, grayPx=${grayPixelCount}, contours=${contours.length}, zeros=${zeros.length}`, {
-        topContours: contours.filter(c => c.area >= 50).slice(0, 10).map(c => ({
-          x: c.x, y: c.y, w: c.w, h: c.h, area: c.area,
-          aspect: +(c.w / c.h).toFixed(2),
-        })),
-      });
+      topContours: contours.filter(c => c.area >= 50).slice(0, 10).map(c => ({
+        x: c.x, y: c.y, w: c.w, h: c.h, area: c.area,
+        aspect: +(c.w / c.h).toFixed(2),
+      })),
+    });
 
     return zeros;
   }

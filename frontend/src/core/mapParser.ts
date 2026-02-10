@@ -2,7 +2,7 @@
  * Map parser using YOLO cell detections with CV fallback.
  */
 import type { Box, CellDetection, CellCode, ColorCode } from '../types/puzzle';
-import { COLOR_RANGES } from './config';
+import { COLOR_RANGES, ALL_COLORS } from './config';
 
 export interface CellInfo {
   row: number;
@@ -19,7 +19,7 @@ export interface MapResult {
   cells: CellInfo[];
 }
 
-const COLOR_CODES: ColorCode[] = ['GN', 'BL', 'CY', 'OG'];
+const COLOR_CODES = ALL_COLORS;
 
 export class MapParser {
   parse(
@@ -221,8 +221,8 @@ export class MapParser {
         for (const code of COLOR_CODES) {
           const [[hMin, sMin, vMin], [hMax, sMax, vMax]] = COLOR_RANGES[code];
           if (hsv.h >= hMin && hsv.h <= hMax &&
-              hsv.s >= sMin && hsv.s <= sMax &&
-              hsv.v >= vMin && hsv.v <= vMax) {
+            hsv.s >= sMin && hsv.s <= sMax &&
+            hsv.v >= vMin && hsv.v <= vMax) {
             counts[code]++;
 
             if (code === 'GN' || code === 'CY') {
@@ -273,8 +273,8 @@ export class MapParser {
         for (const code of COLOR_CODES) {
           const [[hMin, sMin, vMin], [hMax, sMax, vMax]] = COLOR_RANGES[code];
           if (hsv.h >= hMin && hsv.h <= hMax &&
-              hsv.s >= sMin && hsv.s <= sMax &&
-              hsv.v >= vMin && hsv.v <= vMax) {
+            hsv.s >= sMin && hsv.s <= sMax &&
+            hsv.v >= vMin && hsv.v <= vMax) {
             counts[code]++;
 
             if (code === 'GN' || code === 'CY') {
@@ -286,8 +286,8 @@ export class MapParser {
         // Check BK
         const [[bkHMin, bkSMin, bkVMin], [bkHMax, bkSMax, bkVMax]] = COLOR_RANGES.BK;
         if (hsv.h >= bkHMin && hsv.h <= bkHMax &&
-            hsv.s >= bkSMin && hsv.s <= bkSMax &&
-            hsv.v >= bkVMin && hsv.v <= bkVMax) {
+          hsv.s >= bkSMin && hsv.s <= bkSMax &&
+          hsv.v >= bkVMin && hsv.v <= bkVMax) {
           bkCount++;
         }
       }
