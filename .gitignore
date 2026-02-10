@@ -7,6 +7,7 @@ frontend/dist/
 # Debug
 frontend/scripts/
 frontend/test/
+frontend/docs/
 
 # Logs
 log/
